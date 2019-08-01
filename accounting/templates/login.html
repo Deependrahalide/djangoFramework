@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'master/base.html' %}
+
+{% block 'tittle' %}
+
+  Signup
+
+{% endblock %}
+
+{% block 'content' %}
+<div class = "row">
+    <div class ="col-md-4 col-md-offset-4">
+        <div class="panel panel-primary">
+  <div class="panel-heading">Signup</div>
+  <div class="panel-body">
+      {% if error %}
+      <div class = "alert alert-danger">
+          {{error}}
+          {% endif %}
+      </div>
+    <form method="post" action = "{% url 'login' %}">
+        <div class = "form_group">
+            <label for = "username">Username</label>
+            <input type = "text" name ="username" id="username" class="form"
+        </div>
+        {{form}}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

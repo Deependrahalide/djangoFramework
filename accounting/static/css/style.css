@@ -1,0 +1,28 @@
+body{
+overflow-x:hidden;
+}
+
+.header{
+height:30px;
+background-color:blue;
+}
+.email,.contact{
+color:White;
+font-weight:bold;
+}
+.fa-facebook{
+color:white  !important;
+}
+.right>i{
+float:right;
+}
+
+nav>div{
+  background-color:#1a237e;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+ color:white !important;
+ }
+
